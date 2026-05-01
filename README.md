@@ -67,4 +67,3 @@ Every project I ship includes:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bastian_Altamirano-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/bastian-altamirano)
 [![GitHub](https://img.shields.io/badge/GitHub-Arcan17-181717?style=flat&logo=github)](https://github.com/Arcan17)
-[![Email](https://img.shields.io/badge/Email-mixtape.bast@gmail.com-D14836?style=flat&logo=gmail)](mailto:mixtape.bast@gmail.com)
