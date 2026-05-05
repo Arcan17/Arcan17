@@ -11,11 +11,11 @@ I build production-grade backend systems and algorithmic tools — from REST API
 ```python
 skills = {
     "languages":   ["Python 3.11+"],
-    "frameworks":  ["FastAPI", "SQLAlchemy", "python-telegram-bot"],
-    "databases":   ["PostgreSQL", "SQLite"],
-    "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest"],
+    "frameworks":  ["FastAPI", "Django", "DRF", "SQLAlchemy", "Celery", "python-telegram-bot"],
+    "databases":   ["PostgreSQL", "SQLite", "Redis"],
+    "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest", "APScheduler"],
     "async":       ["asyncio", "httpx", "WebSockets"],
-    "crypto":      ["Polymarket CLOB API", "Binance API", "Chainlink RTDS", "Web3.py"],
+    "crypto":      ["Polymarket CLOB API", "Binance API", "Chainlink RTDS", "Web3.py", "CoinGecko API"],
     "finance":     ["Black-Scholes", "Volatility Estimation", "Risk Management"],
 }
 ```
@@ -23,6 +23,14 @@ skills = {
 ---
 
 ## Featured Projects
+
+### 🛡️ [polymarket-bot-reliability-monitor](https://github.com/Arcan17/polymarket-bot-reliability-monitor)
+Standalone API health monitor for Binance WebSocket, Chainlink RTDS, and Polymarket CLOB — runs periodic checks, stores results, exposes a REST API, and sends Telegram alerts on state transitions.
+`FastAPI` `APScheduler` `SQLAlchemy` `Alembic` `PostgreSQL` `asyncio` `WebSockets` `Telegram` `Docker` `GitHub Actions`
+
+### 📊 [crypto-price-monitor](https://github.com/Arcan17/crypto-price-monitor)
+Django + Celery application that polls CoinGecko prices every 60 seconds, stores snapshots in PostgreSQL, and exposes a DRF REST API with filtering and pagination.
+`Django` `DRF` `Celery` `Redis` `PostgreSQL` `CoinGecko API` `Docker` `GitHub Actions`
 
 ### 🤖 [crypto-whale-tracker](https://github.com/Arcan17/crypto-whale-tracker)
 Real-time Ethereum blockchain monitor that detects large wallet movements and sends Telegram alerts.
