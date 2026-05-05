@@ -10,11 +10,12 @@ I build production-grade backend systems and algorithmic tools — from REST API
 
 ```python
 skills = {
-    "languages":   ["Python 3.11+"],
-    "frameworks":  ["FastAPI", "Django", "DRF", "SQLAlchemy", "Celery", "python-telegram-bot"],
+    "languages":   ["Python 3.11+", "TypeScript"],
+    "frameworks":  ["FastAPI", "Django", "DRF", "Next.js", "SQLAlchemy", "Celery", "python-telegram-bot"],
     "databases":   ["PostgreSQL", "SQLite", "Redis"],
     "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest", "APScheduler"],
     "async":       ["asyncio", "httpx", "WebSockets"],
+    "ai":          ["Claude API", "OpenAI API", "Gemini API"],
     "crypto":      ["Polymarket CLOB API", "Binance API", "Chainlink RTDS", "Web3.py", "CoinGecko API"],
     "finance":     ["Black-Scholes", "Volatility Estimation", "Risk Management"],
 }
@@ -23,6 +24,10 @@ skills = {
 ---
 
 ## Featured Projects
+
+### 🚗 [solomiro](https://github.com/Arcan17/solomiro)
+Full-stack AI-powered car change advisor for the Chilean market. Users describe their current car and goals; the app scores and recommends the best new or used alternatives with real cost estimates, fuel savings, and resale risk analysis.
+`Next.js` `FastAPI` `PostgreSQL` `SQLAlchemy` `Claude API` `OpenAI` `Gemini` `Docker` `GitHub Actions`
 
 ### 🛡️ [polymarket-bot-reliability-monitor](https://github.com/Arcan17/polymarket-bot-reliability-monitor)
 Standalone API health monitor for Binance WebSocket, Chainlink RTDS, and Polymarket CLOB — runs periodic checks, stores results, exposes a REST API, and sends Telegram alerts on state transitions.
