@@ -1,8 +1,8 @@
 # Hi, I'm Bastian 👋
 
-**Python Backend Developer** · Viña del Mar, Chile · Open to remote work
+**Python Developer | Automation, APIs & AI Integration** · Viña del Mar, Chile · Open to remote work
 
-I build production-grade backend systems and algorithmic tools — from REST APIs to real-time trading bots.
+I build practical backend solutions — from full-stack AI-powered platforms to Telegram bots, REST APIs, and real-time monitoring systems.
 
 ---
 
@@ -11,13 +11,13 @@ I build production-grade backend systems and algorithmic tools — from REST API
 ```python
 skills = {
     "languages":   ["Python 3.11+", "TypeScript"],
-    "frameworks":  ["FastAPI", "Django", "DRF", "Next.js", "SQLAlchemy", "Celery", "python-telegram-bot"],
+    "frameworks":  ["FastAPI", "Django", "DRF", "Next.js 14", "SQLAlchemy", "Celery", "python-telegram-bot"],
     "databases":   ["PostgreSQL", "SQLite", "Redis"],
-    "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest", "APScheduler"],
+    "ai_llms":     ["Anthropic Claude", "OpenAI GPT-4o", "Google Gemini"],
+    "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest", "APScheduler", "Ruff"],
     "async":       ["asyncio", "httpx", "WebSockets"],
-    "ai":          ["Claude API", "OpenAI API", "Gemini API"],
-    "crypto":      ["Polymarket CLOB API", "Binance API", "Chainlink RTDS", "Web3.py", "CoinGecko API"],
-    "finance":     ["Black-Scholes", "Volatility Estimation", "Risk Management"],
+    "scraping":    ["httpx", "BeautifulSoup", "MercadoLibre API", "CoinGecko API"],
+    "crypto":      ["Web3.py", "Alchemy", "Polymarket CLOB API", "Binance API", "Chainlink RTDS"],
 }
 ```
 
@@ -25,54 +25,42 @@ skills = {
 
 ## Featured Projects
 
-### 🚗 [solomiro](https://github.com/Arcan17/solomiro)
-Full-stack AI-powered car change advisor for the Chilean market. Users describe their current car and goals; the app scores and recommends the best new or used alternatives with real cost estimates, fuel savings, and resale risk analysis.
-`Next.js` `FastAPI` `PostgreSQL` `SQLAlchemy` `Claude API` `OpenAI` `Gemini` `Docker` `GitHub Actions`
-
-### 🛡️ [polymarket-bot-reliability-monitor](https://github.com/Arcan17/polymarket-bot-reliability-monitor)
-Standalone API health monitor for Binance WebSocket, Chainlink RTDS, and Polymarket CLOB — runs periodic checks, stores results, exposes a REST API, and sends Telegram alerts on state transitions.
-`FastAPI` `APScheduler` `SQLAlchemy` `Alembic` `PostgreSQL` `asyncio` `WebSockets` `Telegram` `Docker` `GitHub Actions`
-
-### 📊 [crypto-price-monitor](https://github.com/Arcan17/crypto-price-monitor)
-Django + Celery application that polls CoinGecko prices every 60 seconds, stores snapshots in PostgreSQL, and exposes a DRF REST API with filtering and pagination.
-`Django` `DRF` `Celery` `Redis` `PostgreSQL` `CoinGecko API` `Docker` `GitHub Actions`
-
-### 🤖 [crypto-whale-tracker](https://github.com/Arcan17/crypto-whale-tracker)
-Real-time Ethereum blockchain monitor that detects large wallet movements and sends Telegram alerts.
-`Python` `Web3.py` `Alchemy` `FastAPI` `SQLite` `asyncio` `Telegram`
-
-### 📈 [polymarket-latevalue-bot](https://github.com/Arcan17/polymarket-latevalue-bot)
-Algorithmic trading bot for Polymarket BTC Up/Down markets using Black-Scholes option pricing and multi-source real-time feeds.
-`Python` `Black-Scholes` `Binance API` `Chainlink RTDS` `Polymarket CLOB` `asyncio`
-
-### 🔔 [ml-price-tracker](https://github.com/Arcan17/ml-price-tracker)
-Telegram bot that monitors MercadoLibre Chile prices and notifies users when prices drop to their target.
-`Python` `Telegram Bot` `MercadoLibre API` `SQLAlchemy` `FastAPI` `Docker`
+### 🚗 [SoloMiro](https://github.com/Arcan17/solomiro)
+Full-stack AI car advisor for the Chilean market. Users input their current vehicle and goals; the system calculates real total cost of ownership, filters candidates, and delivers a personalized recommendation via Claude / GPT-4o / Gemini.
+`FastAPI` `Next.js 14` `PostgreSQL` `SQLAlchemy` `Anthropic` `OpenAI` `Docker`
 
 ### 📋 [task-manager-api](https://github.com/Arcan17/task-manager-api)
-Production-ready REST API for task management with full CRUD, PostgreSQL, Alembic migrations, and 20+ tests.
-`FastAPI` `PostgreSQL` `SQLAlchemy` `Alembic` `Pydantic v2` `Docker` `GitHub Actions`
+Production-ready REST API for task management. Full CRUD, status filtering, pagination, Pydantic v2 validation, Alembic migrations, 20+ tests, and GitHub Actions CI.
+`FastAPI` `PostgreSQL` `SQLAlchemy 2.0` `Alembic` `Pydantic v2` `Docker`
+
+### 🔔 [ml-price-tracker](https://github.com/Arcan17/ml-price-tracker)
+Telegram bot that monitors MercadoLibre Chile prices and notifies users when prices drop to their target. Handles concurrent users with async job scheduling — no API key required.
+`Python` `python-telegram-bot` `MercadoLibre API` `SQLAlchemy` `FastAPI` `Docker`
+
+### 🛡️ [polymarket-bot-reliability-monitor](https://github.com/Arcan17/polymarket-bot-reliability-monitor)
+Real-time health monitor for external APIs and WebSocket feeds (Binance WS, Chainlink, Polymarket CLOB). Runs checks every 60 seconds and sends Telegram alerts on failure.
+`FastAPI` `APScheduler` `SQLAlchemy` `asyncio` `Telegram` `Docker`
 
 ---
 
 ## Approach
 
-Every project I ship includes:
+Most production-oriented projects I ship include:
 
-- ✅ Type hints (100% coverage)
+- ✅ Type hints and clean, readable code
 - ✅ Unit + integration tests
 - ✅ Docker + docker-compose setup
-- ✅ GitHub Actions CI/CD
+- ✅ GitHub Actions CI/CD pipeline
 - ✅ Architecture documentation
-- ✅ Zero hardcoded credentials
+- ✅ Environment-based config — no hardcoded credentials
 
 ---
 
 ## Currently
 
-- 🔭 Building tools for crypto trading and on-chain data analysis
-- 📚 Deepening knowledge in quantitative finance and DeFi protocols
-- 🌎 Looking for remote backend or trading infrastructure roles
+- 🔭 Improving portfolio projects and adding real-world use cases
+- 📚 Deepening knowledge in AI integration and backend architecture
+- 🌎 Open to remote roles: Python Developer, Backend Engineer, Automation Developer
 
 ---
 
