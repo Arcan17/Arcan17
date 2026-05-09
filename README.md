@@ -1,23 +1,36 @@
 # Hi, I'm Bastian 👋
 
-**Python Developer | Automation, APIs & AI Integration** · Viña del Mar, Chile · Open to remote work
+**Python Automation & Backend Developer** · Viña del Mar, Chile · Open to remote work
 
-I build practical backend solutions — from full-stack AI-powered platforms to Telegram bots, REST APIs, and real-time monitoring systems.
+I build tools that save time and extract value from data — web scrapers, Telegram bots, REST APIs, ETL pipelines, and automation scripts. If you need something fetched, cleaned, automated, or connected to an API, I can build it.
 
 ---
 
-## What I Build
+## What I can build for you
+
+| Need | What I deliver |
+|---|---|
+| 🕷️ **Scrape a website or API** | Playwright/Selenium scraper → clean JSON/CSV/DB |
+| 🤖 **Telegram / Discord bot** | Commands, alerts, scheduled messages, inline buttons |
+| 🔌 **Connect two APIs** | Aggregation, transformation, sync, webhooks |
+| 📊 **ETL data pipeline** | Extract → clean → PostgreSQL/SQLite + REST API |
+| ⚙️ **Automate a process** | Cron jobs, scheduled tasks, email/file automation |
+| 📈 **Price / data monitor** | Alerts when conditions are met, history stored |
+| 🚀 **FastAPI / Django backend** | CRUD API, auth, pagination, Docker, tests, CI/CD |
+
+---
+
+## Tech Stack
 
 ```python
-skills = {
-    "languages":   ["Python 3.11+", "TypeScript"],
-    "frameworks":  ["FastAPI", "Django", "DRF", "Next.js 14", "SQLAlchemy", "Celery", "python-telegram-bot"],
-    "databases":   ["PostgreSQL", "SQLite", "Redis"],
-    "ai_llms":     ["Anthropic Claude", "OpenAI GPT-4o", "Google Gemini"],
-    "tools":       ["Docker", "GitHub Actions", "Alembic", "pytest", "APScheduler", "Ruff"],
-    "async":       ["asyncio", "httpx", "WebSockets"],
-    "scraping":    ["httpx", "BeautifulSoup", "MercadoLibre API", "CoinGecko API"],
-    "crypto":      ["Web3.py", "Alchemy", "Polymarket CLOB API", "Binance API", "Chainlink RTDS"],
+stack = {
+    "scraping":    ["httpx", "BeautifulSoup", "Scrapling", "Playwright", "Selenium"],
+    "bots":        ["python-telegram-bot", "asyncio", "WebSockets"],
+    "backend":     ["FastAPI", "Django", "DRF", "SQLAlchemy", "Pydantic v2", "Alembic"],
+    "data":        ["Polars", "pandas", "DuckDB", "PostgreSQL", "SQLite", "Redis"],
+    "pipelines":   ["Celery", "APScheduler", "GitHub Actions", "Docker"],
+    "ai":          ["Anthropic Claude", "OpenAI GPT-4o", "Google Gemini"],
+    "crypto":      ["Web3.py", "Alchemy", "CoinGecko API", "Binance API", "Polymarket API"],
 }
 ```
 
@@ -25,42 +38,48 @@ skills = {
 
 ## Featured Projects
 
-### 🚗 [SoloMiro](https://github.com/Arcan17/solomiro)
-Full-stack AI car advisor for the Chilean market. Users input their current vehicle and goals; the system calculates real total cost of ownership, filters candidates, and delivers a personalized recommendation via Claude / GPT-4o / Gemini.
-`FastAPI` `Next.js 14` `PostgreSQL` `SQLAlchemy` `Anthropic` `OpenAI` `Docker`
+### 🏠 [Real Estate ETL Pipeline](https://github.com/Arcan17/real-estate-etl)
+Scrapes ~240 live property listings from Portal Inmobiliario Chile using Scrapling (anti-bot), cleans data with Polars, loads into DuckDB, and visualizes in an interactive Streamlit dashboard with filters and clickable property links.
+`Scrapling` `Polars` `DuckDB` `Streamlit` `Plotly` `Python` `CI/CD`
 
-### 📋 [task-manager-api](https://github.com/Arcan17/task-manager-api)
-Production-ready REST API for task management. Full CRUD, status filtering, pagination, Pydantic v2 validation, Alembic migrations, 20+ tests, and GitHub Actions CI.
-`FastAPI` `PostgreSQL` `SQLAlchemy 2.0` `Alembic` `Pydantic v2` `Docker`
+### 📊 [Crypto Price Monitor](https://github.com/Arcan17/crypto-price-monitor)
+ETL pipeline that fetches BTC/ETH/USDC prices from CoinGecko every 5 minutes, stores in PostgreSQL, and exposes a REST API with 24h stats and CSV export (`/api/export/prices.csv`).
+`Django` `Celery` `Redis` `PostgreSQL` `DRF` `Docker`
 
-### 🔔 [ml-price-tracker](https://github.com/Arcan17/ml-price-tracker)
-Telegram bot that monitors MercadoLibre Chile prices and notifies users when prices drop to their target. Handles concurrent users with async job scheduling — no API key required.
-`Python` `python-telegram-bot` `MercadoLibre API` `SQLAlchemy` `FastAPI` `Docker`
+### 🔔 [ML Price Tracker](https://github.com/Arcan17/ml-price-tracker)
+Telegram bot that monitors MercadoLibre Chile prices and alerts users when a product drops to their target price. Checks every 30 minutes with async job scheduling — no API key needed.
+`python-telegram-bot` `MercadoLibre API` `SQLAlchemy` `FastAPI` `Docker`
 
-### 🛡️ [polymarket-bot-reliability-monitor](https://github.com/Arcan17/polymarket-bot-reliability-monitor)
-Real-time health monitor for external APIs and WebSocket feeds (Binance WS, Chainlink, Polymarket CLOB). Runs checks every 60 seconds and sends Telegram alerts on failure.
-`FastAPI` `APScheduler` `SQLAlchemy` `asyncio` `Telegram` `Docker`
+### 📋 [Task Manager API](https://github.com/Arcan17/task-manager-api)
+Production-ready REST API with full CRUD, status filtering, pagination, Pydantic v2, Alembic migrations, 20+ tests, and GitHub Actions CI. Clean base for any backend project.
+`FastAPI` `PostgreSQL` `SQLAlchemy 2.0` `Alembic` `Docker`
+
+### 🤖 [Latam Recruitment Bot](https://github.com/Arcan17/latam-recruitment-bot)
+Scrapes job postings across 9 platforms in 5 Latin American countries and generates personalized pitches with Claude AI. Kanban-style job management dashboard.
+`Scraping` `FastAPI` `Claude AI` `Python` `Automation`
+
+### 🐋 [Crypto Whale Tracker](https://github.com/Arcan17/crypto-whale-tracker)
+Monitors Ethereum on-chain transactions in real time, labels whale wallets, stores in DB, and sends Telegram alerts when large transactions are detected.
+`Web3.py` `Alchemy API` `SQLAlchemy` `Telegram` `asyncio`
 
 ---
 
-## Approach
+## Every project I ship includes
 
-Most production-oriented projects I ship include:
-
-- ✅ Type hints and clean, readable code
-- ✅ Unit + integration tests
-- ✅ Docker + docker-compose setup
-- ✅ GitHub Actions CI/CD pipeline
-- ✅ Architecture documentation
-- ✅ Environment-based config — no hardcoded credentials
+- ✅ Clean, typed Python code with comments
+- ✅ Unit + integration tests (pytest)
+- ✅ Docker + docker-compose ready
+- ✅ GitHub Actions CI/CD
+- ✅ `.env.example` — no hardcoded credentials
+- ✅ Clear README with quickstart in 3 commands
 
 ---
 
 ## Currently
 
-- 🔭 Improving portfolio projects and adding real-world use cases
-- 📚 Deepening knowledge in AI integration and backend architecture
-- 🌎 Open to remote roles: Python Developer, Backend Engineer, Automation Developer
+- 🔭 Open to freelance projects: scraping, bots, APIs, automation, ETL
+- 🌎 Open to remote roles: Python Developer · Backend Engineer · Data Engineer
+- 📍 Based in Chile — available for US/EU time zones
 
 ---
 
@@ -68,3 +87,4 @@ Most production-oriented projects I ship include:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bastian_Altamirano-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/bastian-altamirano/)
 [![GitHub](https://img.shields.io/badge/GitHub-Arcan17-181717?style=flat&logo=github)](https://github.com/Arcan17)
+[![Upwork](https://img.shields.io/badge/Upwork-Available-6FDA44?style=flat&logo=upwork)](https://www.upwork.com)
