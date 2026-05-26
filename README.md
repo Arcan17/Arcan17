@@ -1,90 +1,69 @@
 # Hi, I'm Bastian 👋
 
-**Python Backend · ETL Pipelines · Automation · Web3** · Viña del Mar, Chile · Open to remote work
+**Python Backend Developer · AI Automation · RAG Systems · ETL Pipelines**  
+📍 Viña del Mar, Chile &nbsp;|&nbsp; 🌐 Open to remote roles
 
-I build tools that extract value from data and automate what shouldn't be manual — real-time blockchain monitors, ETL pipelines, REST APIs, Telegram bots, and AI-powered platforms.
-
----
-
-## What I can build for you
-
-| Need | What I deliver |
-|---|---|
-| 🐋 **On-chain / Web3 data** | Real-time tx monitoring, wallet labeling, whale alerts |
-| 📊 **ETL data pipeline** | Extract → clean (Polars) → load (DuckDB/PostgreSQL) + REST API |
-| 🕷️ **Scrape a website or API** | Scrapling/Playwright scraper → clean JSON/CSV/DB |
-| 🤖 **Telegram / Discord bot** | Commands, alerts, scheduled messages, inline buttons |
-| 🚀 **FastAPI / Django backend** | CRUD API, auth, pagination, Docker, tests, CI/CD |
-| 🔌 **Connect two APIs** | Aggregation, transformation, sync, webhooks |
-| 📈 **Price / data monitor** | Alerts when conditions are met, history stored |
-
----
-
-## Tech Stack
-
-```python
-stack = {
-    "backend":     ["FastAPI", "Django/DRF", "SQLAlchemy", "Pydantic v2", "Alembic"],
-    "data":        ["Polars", "DuckDB", "pandas", "PostgreSQL", "SQLite", "Redis"],
-    "scraping":    ["Scrapling", "httpx", "BeautifulSoup", "Playwright"],
-    "bots":        ["python-telegram-bot", "asyncio", "WebSockets"],
-    "ai":          ["Anthropic Claude", "OpenAI GPT-4o", "Google Gemini"],
-    "crypto":      ["Web3.py", "Alchemy", "CoinGecko API", "Binance API", "Polymarket API"],
-    "devops":      ["Docker", "GitHub Actions CI/CD", "pytest", "Ruff", "Black"],
-}
-```
+I build backend systems, data pipelines, and AI automation tools using Python, FastAPI, PostgreSQL, Docker, and LLM APIs. My projects run in production with automated tests, CI/CD, and architecture documentation.
 
 ---
 
 ## Featured Projects
 
-### 🐋 [Crypto Whale Tracker](https://github.com/Arcan17/crypto-whale-tracker)
-Real-time Ethereum on-chain intelligence pipeline. Streams pending transactions via WebSocket, detects whale movements above a configurable USD threshold, labels known exchange/DeFi/bridge wallets, and sends instant Telegram alerts. Exposes a FastAPI REST API with paginated queries, wallet intelligence summaries, and CSV/XLSX export. Includes a browser dashboard, 30 passing tests, and GitHub Actions CI/CD.
-`Web3.py` `Alchemy` `FastAPI` `SQLAlchemy` `PostgreSQL` `asyncio` `Docker` `CI/CD`
+### 🔒 [PrivRAG](https://github.com/Arcan17/privrag) · [Live API Demo](https://privrag-production.up.railway.app/docs)
+Privacy-preserving RAG pipeline for enterprise document Q&A. Semantic chunking, ChromaDB vector store, cosine similarity threshold, SHA256 query cache (30–45% hit rate), and regex + spaCy PII stripping (100% RUT/email detection). Raw sensitive data never reaches external APIs.  
+`Python` `FastAPI` `ChromaDB` `PostgreSQL` `spaCy` `Docker` `CI/CD` — **61 tests**
+
+---
+
+### 🤖 [AgentForge](https://github.com/Arcan17/agentforge)
+Production multi-agent research platform built with LangGraph. 5-node pipeline (Planner → Researcher → Analyst → Critic → Writer), human-in-the-loop gating, SSE streaming, Celery task queue, cost tracking per run ($0.025/task avg), and a Next.js 15 dashboard.  
+`Python` `LangGraph` `FastAPI` `Next.js 15` `Celery` `Redis` `PostgreSQL` `Docker` — **130 tests**
+
+---
 
 ### 🏠 [Real Estate ETL Pipeline](https://github.com/Arcan17/real-estate-etl)
-End-to-end ETL for Chilean real estate listings. Scrapes ~240 live property listings with Scrapling (anti-bot fingerprinting), cleans and normalizes with Polars, loads into DuckDB, and exposes a FastAPI query layer with analytical endpoints and Excel/XLSX export. Interactive Streamlit dashboard with filters and clickable property links.
-`Scrapling` `Polars` `DuckDB` `FastAPI` `Streamlit` `Plotly` `openpyxl` `CI/CD`
-
-### 📊 [Crypto Price Monitor](https://github.com/Arcan17/crypto-price-monitor)
-ETL pipeline that fetches BTC/ETH/USDC prices from CoinGecko every 5 minutes, stores in PostgreSQL, and exposes a REST API with 24h stats and CSV export (`/api/export/prices.csv`).
-`Django` `Celery` `Redis` `PostgreSQL` `DRF` `Docker`
-
-### 🔔 [ML Price Tracker](https://github.com/Arcan17/ml-price-tracker)
-Telegram bot that monitors MercadoLibre Chile prices and alerts users when a product drops to their target price. Checks every 30 minutes with async job scheduling — no API key needed.
-`python-telegram-bot` `MercadoLibre API` `SQLAlchemy` `FastAPI` `Docker`
-
-### 🚗 [SoloMiro](https://github.com/Arcan17/solomiro)
-Full-stack AI platform that helps Chilean drivers decide whether to keep or switch their car. Calculates real total cost of ownership and delivers a personalized recommendation via Claude / GPT-4o / Gemini. AI provider is swappable via a single env variable.
-`FastAPI` `Next.js 14` `PostgreSQL` `SQLAlchemy` `Anthropic` `OpenAI` `Docker`
-
-### 📋 [Task Manager API](https://github.com/Arcan17/task-manager-api)
-Production-ready REST API with full CRUD, status filtering, pagination, Pydantic v2, Alembic migrations, 20+ tests, and GitHub Actions CI. Clean architecture base for any backend project.
-`FastAPI` `PostgreSQL` `SQLAlchemy 2.0` `Alembic` `Docker`
+End-to-end ETL scraping ~240 live Chilean property listings, normalizing with Polars, loading into DuckDB, and exposing a FastAPI query layer with analytics endpoints, Excel export, and a Streamlit dashboard.  
+`Python` `Scrapling` `Polars` `DuckDB` `FastAPI` `Streamlit` `Docker` `CI/CD`
 
 ---
 
-## Every project I ship includes
+### ⚙️ [PeopleOps Workflow API](https://github.com/Arcan17/peopleops-workflow-api)
+Production-grade REST API for HR workflow automation: role-based permissions, Celery async notifications, approval chains, audit logs, and OpenAPI docs. Built as a Django/DRF reference for enterprise patterns.  
+`Python` `Django REST Framework` `PostgreSQL` `Celery` `Redis` `Docker` `CI/CD`
 
-- ✅ Clean, typed Python code with comments
+---
+
+### 🔔 [Crypto Whale Tracker](https://github.com/Arcan17/crypto-whale-tracker)
+Real-time Ethereum on-chain intelligence pipeline. Streams pending transactions via WebSocket, detects whale movements, labels known exchange/DeFi wallets, and sends instant Telegram alerts.  
+`Python` `Web3.py` `Alchemy` `FastAPI` `PostgreSQL` `asyncio` `Docker` — **30 tests**
+
+---
+
+## Tech Stack
+
+| Area | Tools |
+|------|-------|
+| **Languages** | Python 3.11+, TypeScript, SQL |
+| **Backend** | FastAPI, Django REST Framework, SQLAlchemy 2.0 |
+| **AI / LLMs** | LangGraph, LangChain, Anthropic Claude, OpenAI GPT-4o, ChromaDB, RAG |
+| **Data / ETL** | Polars, DuckDB, Scrapling, Streamlit |
+| **Databases** | PostgreSQL, Redis, SQLite, ChromaDB |
+| **DevOps** | Docker, GitHub Actions CI/CD, Railway, Alembic |
+| **Testing** | pytest, pytest-asyncio, coverage |
+| **Async** | asyncio, WebSockets, SSE, Celery |
+
+---
+
+## Standards
+
+Every project I ship includes:
+- ✅ Type hints and clean, readable code
 - ✅ Unit + integration tests (pytest)
-- ✅ Docker + docker-compose ready
+- ✅ Docker + docker-compose
 - ✅ GitHub Actions CI/CD
-- ✅ `.env.example` — no hardcoded credentials
-- ✅ Clear README with quickstart in 3 commands
+- ✅ Architecture documentation
+- ✅ Zero hardcoded credentials
 
 ---
 
-## Currently
-
-- 🔭 Open to freelance projects: ETL, scraping, bots, APIs, automation, Web3
-- 🌎 Open to remote roles: Python Developer · Backend Engineer · Data Engineer
-- 📍 Based in Chile — available for US/EU time zones
-
----
-
-## Contact
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bastian_Altamirano-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/bastian-altamirano/)
-[![GitHub](https://img.shields.io/badge/GitHub-Arcan17-181717?style=flat&logo=github)](https://github.com/Arcan17)
-[![Upwork](https://img.shields.io/badge/Upwork-Available-6FDA44?style=flat&logo=upwork)](https://www.upwork.com/freelancers/~01250252bf559aadff)
+📬 **mixtape.bast@gmail.com** · [LinkedIn](https://linkedin.com/in/bastian-altamirano-3805b4309) · [Portfolio](https://portfolio-seven-dusky-80.vercel.app)
