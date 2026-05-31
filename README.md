@@ -1,69 +1,82 @@
 # Hi, I'm Bastian 👋
 
-**Python Backend Developer · AI Automation · RAG Systems · ETL Pipelines**  
-📍 Viña del Mar, Chile &nbsp;|&nbsp; 🌐 Open to remote roles
+### Python Backend & Applied AI Engineer
 
-I build backend systems, data pipelines, and AI automation tools using Python, FastAPI, PostgreSQL, Docker, and LLM APIs. My projects run in production with automated tests, CI/CD, and architecture documentation.
+**I build production APIs, AI agents and RAG systems** — with FastAPI, LangGraph, PostgreSQL, Docker and CI/CD.  
+📍 Viña del Mar, Chile &nbsp;·&nbsp; 🌐 Open to remote roles worldwide
+
+&nbsp;
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-seven-dusky-80.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bastian-altamirano)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mixtape.bast@gmail.com)
+
+---
+
+## 🛠️ Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+
+![LangGraph](https://img.shields.io/badge/LangGraph-7C3AED?style=flat-square&logo=langchain&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic_Claude-D97706?style=flat-square&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
+
+![Polars](https://img.shields.io/badge/Polars-CD792C?style=flat-square&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFC832?style=flat-square&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 
 ---
 
-## Featured Projects
-
-### 🔒 [PrivRAG](https://github.com/Arcan17/privrag) · [Live API Demo](https://privrag-production.up.railway.app/docs)
-Privacy-preserving RAG pipeline for enterprise document Q&A. Semantic chunking, ChromaDB vector store, cosine similarity threshold, SHA256 query cache (30–45% hit rate), and regex + spaCy PII stripping (100% RUT/email detection). Raw sensitive data never reaches external APIs.  
-`Python` `FastAPI` `ChromaDB` `PostgreSQL` `spaCy` `Docker` `CI/CD` — **61 tests**
-
----
+## 🚀 Featured Projects
 
 ### 🤖 [AgentForge](https://github.com/Arcan17/agentforge)
-Production multi-agent research platform built with LangGraph. 5-node pipeline (Planner → Researcher → Analyst → Critic → Writer), human-in-the-loop gating, SSE streaming, Celery task queue, cost tracking per run ($0.025/task avg), and a Next.js 15 dashboard.  
-`Python` `LangGraph` `FastAPI` `Next.js 15` `Celery` `Redis` `PostgreSQL` `Docker` — **130 tests**
+Production multi-agent research pipeline with **LangGraph** and **FastAPI**. 5-node pipeline (Planner → Researcher → Analyst → Critic → Writer), human-in-the-loop approval, real-time SSE streaming, cost tracking and a Next.js dashboard.  
+`LangGraph` `FastAPI` `Celery` `Redis` `PostgreSQL` `Docker` — **123 tests**
 
 ---
 
-### 🏠 [Real Estate ETL Pipeline](https://github.com/Arcan17/real-estate-etl)
-End-to-end ETL scraping ~240 live Chilean property listings, normalizing with Polars, loading into DuckDB, and exposing a FastAPI query layer with analytics endpoints, Excel export, and a Streamlit dashboard.  
-`Python` `Scrapling` `Polars` `DuckDB` `FastAPI` `Streamlit` `Docker` `CI/CD`
+### 🔒 [PrivRAG](https://github.com/Arcan17/privrag) &nbsp;·&nbsp; **[Live Demo ↗](https://privrag-production.up.railway.app/docs)**
+Privacy-preserving RAG API for enterprise documents. Strips PII (RUT/email/phone) before it reaches the LLM. SHA256 cache (30–45% hit rate), cosine threshold filtering, 61 automated tests.  
+`FastAPI` `ChromaDB` `PostgreSQL` `fastembed` `spaCy` `Railway`
 
 ---
 
-### ⚙️ [PeopleOps Workflow API](https://github.com/Arcan17/peopleops-workflow-api)
-Production-grade REST API for HR workflow automation: role-based permissions, Celery async notifications, approval chains, audit logs, and OpenAPI docs. Built as a Django/DRF reference for enterprise patterns.  
-`Python` `Django REST Framework` `PostgreSQL` `Celery` `Redis` `Docker` `CI/CD`
+### ⚙️ [IntegrationOps](https://github.com/Arcan17/integrationops)
+Backend platform for data ingestion, async job processing, HMAC-signed webhooks and operational audit trails. JWT auth + RBAC (admin/operator/viewer), Celery/Redis workers, Next.js dashboard.  
+`FastAPI` `Celery` `Redis` `PostgreSQL` `Docker` `CI/CD` — **100+ tests**
+
+---
+
+### 🏠 [Real Estate ETL Pipeline](https://github.com/Arcan17/real-estate-etl) &nbsp;·&nbsp; **[Live Demo ↗](https://real-estate-etl-production.up.railway.app)**
+End-to-end ETL for Chilean property listings. Scraping with anti-bot fingerprinting, Polars transforms, DuckDB analytics, FastAPI REST layer and Streamlit dashboard with Excel export.  
+`Python` `Scrapling` `Polars` `DuckDB` `FastAPI` `Streamlit` `Docker`
 
 ---
 
 ### 🔔 [Crypto Whale Tracker](https://github.com/Arcan17/crypto-whale-tracker)
-Real-time Ethereum on-chain intelligence pipeline. Streams pending transactions via WebSocket, detects whale movements, labels known exchange/DeFi wallets, and sends instant Telegram alerts.  
-`Python` `Web3.py` `Alchemy` `FastAPI` `PostgreSQL` `asyncio` `Docker` — **30 tests**
+Real-time Ethereum on-chain intelligence pipeline. Streams pending transactions via WebSocket, detects whale movements, labels known exchange/DeFi wallets and sends instant Telegram alerts.  
+`Python` `Web3.py` `FastAPI` `PostgreSQL` `asyncio` `Docker` — **30 tests**
 
 ---
 
-## Tech Stack
+## 📊 GitHub Stats
 
-| Area | Tools |
-|------|-------|
-| **Languages** | Python 3.11+, TypeScript, SQL |
-| **Backend** | FastAPI, Django REST Framework, SQLAlchemy 2.0 |
-| **AI / LLMs** | LangGraph, LangChain, Anthropic Claude, OpenAI GPT-4o, ChromaDB, RAG |
-| **Data / ETL** | Polars, DuckDB, Scrapling, Streamlit |
-| **Databases** | PostgreSQL, Redis, SQLite, ChromaDB |
-| **DevOps** | Docker, GitHub Actions CI/CD, Railway, Alembic |
-| **Testing** | pytest, pytest-asyncio, coverage |
-| **Async** | asyncio, WebSockets, SSE, Celery |
+<p align="left">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Arcan17&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arcan17&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
+</p>
 
 ---
 
-## Standards
-
-Every project I ship includes:
-- ✅ Type hints and clean, readable code
-- ✅ Unit + integration tests (pytest)
-- ✅ Docker + docker-compose
-- ✅ GitHub Actions CI/CD
-- ✅ Architecture documentation
-- ✅ Zero hardcoded credentials
-
----
-
-📬 **mixtape.bast@gmail.com** · [LinkedIn](https://linkedin.com/in/bastian-altamirano-3805b4309) · [Portfolio](https://portfolio-seven-dusky-80.vercel.app)
+*Every project ships with tests, Docker, CI/CD and clear documentation — because production code needs to be maintainable, not just functional.*
