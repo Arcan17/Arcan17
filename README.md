@@ -40,6 +40,12 @@
 
 ## 🚀 Featured Projects
 
+### 🎟️ [AgentDesk AI](https://github.com/Arcan17/agentdesk-ai)
+Human-in-the-loop AI **SupportOps** platform. A **LangGraph** workflow (classifier → retriever → draft → critic → decision) drafts support replies grounded in a **pgvector** knowledge base; operators **approve / edit / reject** and low-confidence cases auto-escalate. Multi-tenant (JWT + RBAC), audit log, metrics, **HMAC-signed webhooks** with bounded Celery retries, and a Next.js dashboard. Built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
+`FastAPI` `LangGraph` `pgvector` `Celery` `Redis` `Next.js` `Docker` `CI/CD` — **42 tests**
+
+---
+
 ### 🤖 [AgentForge](https://github.com/Arcan17/agentforge)
 Production multi-agent research pipeline with **LangGraph** and **FastAPI**. 5-node pipeline (Planner → Researcher → Analyst → Critic → Writer), human-in-the-loop approval, real-time SSE streaming, cost tracking and a Next.js dashboard.  
 `LangGraph` `FastAPI` `Celery` `Redis` `PostgreSQL` `Docker` — **123 tests**
