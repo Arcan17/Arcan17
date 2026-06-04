@@ -44,8 +44,6 @@
 Paste a job → get a **defensible hybrid fit score** (deterministic weighted components + **pgvector** embeddings; the LLM only *explains* the result, **never sets the number**, so scores stay reproducible) → generate recruiter outreach, track applications on a status board, and run a **rule-based recruiter safety check** that flags scam signals. Full-stack with a **Next.js** dashboard; built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
 `FastAPI` `pgvector` `SQLAlchemy 2.0` `Next.js` `TypeScript` `Docker` `CI/CD` — **35 tests**
 
-[![JobOps AI dashboard](https://raw.githubusercontent.com/Arcan17/jobops-ai/main/docs/screenshots/02-dashboard.png)](https://github.com/Arcan17/jobops-ai)
-
 ---
 
 ### 🎟️ [AgentDesk AI](https://github.com/Arcan17/agentdesk-ai)
