@@ -40,6 +40,14 @@
 
 ## 🚀 Featured Projects
 
+### 🎯 [JobOps AI](https://github.com/Arcan17/jobops-ai) — AI-powered Job-Search CRM
+Paste a job → get a **defensible hybrid fit score** (deterministic weighted components + **pgvector** embeddings; the LLM only *explains* the result, **never sets the number**, so scores stay reproducible) → generate recruiter outreach, track applications on a status board, and run a **rule-based recruiter safety check** that flags scam signals. Full-stack with a **Next.js** dashboard; built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
+`FastAPI` `pgvector` `SQLAlchemy 2.0` `Next.js` `TypeScript` `Docker` `CI/CD` — **35 tests**
+
+[![JobOps AI dashboard](https://raw.githubusercontent.com/Arcan17/jobops-ai/main/docs/screenshots/02-dashboard.png)](https://github.com/Arcan17/jobops-ai)
+
+---
+
 ### 🎟️ [AgentDesk AI](https://github.com/Arcan17/agentdesk-ai)
 Human-in-the-loop AI **SupportOps** platform. A **LangGraph** workflow (classifier → retriever → draft → critic → decision) drafts support replies grounded in a **pgvector** knowledge base; operators **approve / edit / reject** and low-confidence cases auto-escalate. Multi-tenant (JWT + RBAC), audit log, metrics, **HMAC-signed webhooks** with bounded Celery retries, and a Next.js dashboard. Built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
 `FastAPI` `LangGraph` `pgvector` `Celery` `Redis` `Next.js` `Docker` `CI/CD` — **42 tests**
