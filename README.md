@@ -40,6 +40,12 @@
 
 ## 🚀 Featured Projects
 
+### 🧭 [TalentTrust AI](https://github.com/Arcan17/talenttrust-ai) — AI Recruiting Copilot
+Turns a **CV + a job vacancy** into a verifiable, explainable **candidate dossier**: a **deterministic 0–100 fit score** with a six-factor breakdown (the **LLM only explains the number, never sets it**, so scores stay reproducible), evidence-based skills, neutral inconsistencies, suggested interview questions, a **fairness guard** that excludes sensitive attributes from scoring, a **human-recorded final decision** (non-binding AI recommendation), and **PDF export**. Multi-tenant (JWT + RBAC), immutable audit log, on-demand delete + TTL. Full-stack **Next.js** dashboard; built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
+`FastAPI` `pgvector` `SQLAlchemy 2.0` `Next.js` `TypeScript` `ReportLab` `Docker` `CI/CD` — **97 tests**
+
+---
+
 ### 🎯 [JobOps AI](https://github.com/Arcan17/jobops-ai) — AI-powered Job-Search CRM
 Paste a job → get a **defensible hybrid fit score** (deterministic weighted components + **pgvector** embeddings; the LLM only *explains* the result, **never sets the number**, so scores stay reproducible) → generate recruiter outreach, track applications on a status board, and run a **rule-based recruiter safety check** that flags scam signals. Full-stack with a **Next.js** dashboard; built spec-driven; **deterministic offline tests — no paid LLM calls in CI**.  
 `FastAPI` `pgvector` `SQLAlchemy 2.0` `Next.js` `TypeScript` `Docker` `CI/CD` — **35 tests**
